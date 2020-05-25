@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 /// A widget that implicitly animates between two texts
+///
+/// {@category Widget}
 class AnimatedText extends StatefulWidget {
   /// Creates a new animated text widget
   ///

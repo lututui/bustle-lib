@@ -1,0 +1,13 @@
+dartdoc:
+  categories:
+    "Util":
+    "Widget":
+  categoryOrder: ["Util", "Widget"]
+  linkToSource:
+    root: lib/src/
+    uriTemplate: https://github.com/lututui/bustle-lib/blob/master/lib/src/%f%#L%l%
+  showUndocumentedCategories: true
+  errors:
+    - unresolved-doc-reference
+  warnings:
+    - tool-error

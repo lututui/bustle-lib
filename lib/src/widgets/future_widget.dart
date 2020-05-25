@@ -8,6 +8,8 @@ typedef OnErrorCallback = void Function(Object);
 typedef ComputationCallback<T> = FutureOr<T> Function();
 
 /// A nicer wrapper for [FutureBuilder]
+///
+/// {@category Widget}
 class FutureWidget<T> extends StatelessWidget {
   /// Creates a new future widget
   FutureWidget({

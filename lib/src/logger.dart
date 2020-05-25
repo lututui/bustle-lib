@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart' show kDebugMode, debugPrint;
 
 /// Static class for standardizing console logging
+///
+/// {@category Util}
 class DebugLogger {
   DebugLogger._();
 

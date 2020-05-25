@@ -4,6 +4,8 @@ import 'package:flutter/material.dart' show Colors;
 import 'package:flutter/painting.dart' show HSLColor;
 
 /// Color-related utility functions
+///
+/// {@category Util}
 class ColorsUtil {
   ColorsUtil._();
 
@@ -15,7 +17,7 @@ class ColorsUtil {
   static Color darkenColor(Color original, {double factor = 0.80}) {
     assert(factor > 0 && factor < 1);
 
-    final HSLColor hslOriginal = HSLColor.fromColor(original);
+    final hslOriginal = HSLColor.fromColor(original);
     return hslOriginal.withLightness(factor * hslOriginal.lightness).toColor();
   }
 
@@ -23,7 +25,7 @@ class ColorsUtil {
   static Color lightenColor(Color original, {double factor = 0.80}) {
     assert(factor > 0 && factor < 1);
 
-    final HSLColor hslOriginal = HSLColor.fromColor(original);
+    final hslOriginal = HSLColor.fromColor(original);
     return hslOriginal
         .withLightness(factor * (1 - hslOriginal.lightness))
         .toColor();
@@ -55,7 +57,7 @@ class ColorsUtil {
   /// The brightness value is cached
   static Brightness getBrightness(Color color) {
     return _brightnessMap.putIfAbsent(color, () {
-      final double luminance = getLuminance(color);
+      final luminance = getLuminance(color);
 
       if ((luminance + 0.05) * (luminance + 0.05) > 0.0525) {
         return Brightness.light;
@@ -81,14 +83,14 @@ class ColorsUtil {
 
   /// Adjusts [original] to meet WCAG minimum contrast (AA level)
   static Color adjustColor(Color original, Color background) {
-    final bool meetsRequirement = contrastRatio(original, background) >= 4.5;
+    final meetsRequirement = contrastRatio(original, background) >= 4.5;
 
     if (meetsRequirement) {
       return original;
     }
 
-    final bool isDarkBackground = isDark(background);
-    final Color newColor =
+    final isDarkBackground = isDark(background);
+    final newColor =
         isDarkBackground ? lightenColor(original) : darkenColor(original);
 
     if (contrastRatio(newColor, background) < 4.5) {

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 
 /// A widget that creates a border around its [child] animated with
 /// two [Gradient]s
+///
+/// {@category Widget}
 class AnimatedGradientBorder extends StatefulWidget {
   /// Creates a new animated gradient border widget
   const AnimatedGradientBorder({

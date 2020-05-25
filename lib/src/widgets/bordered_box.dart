@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 /// A shorthand for a [Container] with a colored [Border]
+///
+/// {@category Widget}
 class BorderedBox extends StatelessWidget {
   /// Creates a new bordered box
   const BorderedBox({

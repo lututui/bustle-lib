@@ -1,7 +1,15 @@
+/// A collection of widgets and utils used by lututui's projects
 library bustle;
 
-export 'src/logger.dart';
+/**
+ * Utils
+ */
 export 'src/colors.dart';
+export 'src/logger.dart';
+
+/**
+ * Widgets
+ */
 export 'src/widgets/animated_gradient_border.dart';
 export 'src/widgets/animated_text.dart';
 export 'src/widgets/bordered_box.dart';

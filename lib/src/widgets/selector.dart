@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 /// A widget that shows one of its children at a time, between two arrow buttons
 /// to cycle through the list of selectable children
+///
+/// {@category Widget}
 class Selector extends StatefulWidget {
   /// Creates a new selector widget from an explicit [List] of children
   ///

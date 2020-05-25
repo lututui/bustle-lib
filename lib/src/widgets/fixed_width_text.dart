@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-/// A text widget that layouts [inlineSpan] with fixed width
+/// A text widget that layouts a [InlineSpan] with fixed width
+///
+/// {@category Widget}
 class FixedWidthText extends StatelessWidget {
   /// Creates a new fixed width text widget
   ///

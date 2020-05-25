@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 typedef OnPressCallback = void Function(BuildContext);
 
 /// An [IconButton] which forces its shape to be square
+///
+/// {@category Widget}
 class SquareIconButton extends StatelessWidget {
   /// Creates a new square icon button
   const SquareIconButton({

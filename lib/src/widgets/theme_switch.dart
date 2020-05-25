@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 /// A [Switch] that follows the [ThemeData] in its context, adjusting the theme
 /// to follow WCAG for contrast
+///
+/// {@category Widget}
 class ThemeSwitch extends StatelessWidget {
   /// Creates a new switch
   const ThemeSwitch({
@@ -23,11 +25,11 @@ class ThemeSwitch extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeData themeData = Theme.of(context);
+    final themeData = Theme.of(context);
 
-    final bool isDark = themeData.brightness == Brightness.dark;
+    final isDark = themeData.brightness == Brightness.dark;
 
-    final Color activeColor = ColorsUtil.adjustColor(
+    final activeColor = ColorsUtil.adjustColor(
       themeData.toggleableActiveColor,
       themeData.scaffoldBackgroundColor,
     );
