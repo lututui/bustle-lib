@@ -1,12 +1,12 @@
 name: bustle
 description: Collection of widgets and utilities used by lututui's projects
-version: 0.0.2
+version: 0.0.2+1
 author: lututui
 homepage: https://github.com/lututui/bustle-lib
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
-  flutter: ">=1.17.1 <2.0.0"
+  flutter: ">=1.17.0 <2.0.0"
 
 dependencies:
   flutter:
