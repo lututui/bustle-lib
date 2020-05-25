@@ -1,0 +1,18 @@
+name: bustle
+description: Collection of widgets and utilities used by lututui's projects
+version: 0.0.1
+author: lututui
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  pedantic: ^1.9.0
+
+flutter:
